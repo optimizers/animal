@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/75796109.svg)](https://zenodo.org/badge/latestdoi/75796109)
+
 # Animal Breeding Linear Least-Squares Problems
 
 This is a copy of Markus Hegland's animal breeding linear least-squares
