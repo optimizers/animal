@@ -58,3 +58,33 @@ For this reason, the solutions are named, e.g., `small_scaled_mls.rb`.
 
 The Matlab code writes the solutions as simple vectors in a text file.
 The matrices, right-hand sides and solutions are subsequently converted to Rutherford-Boeing format using the Julia package [`HarwellRutherfordBoeing.jl`](https://github.com/JuliaSparse/HarwellRutherfordBoeing.jl).
+
+## References
+
+Here are the original references for this test set.
+The second one is included in this repository, under `original/descr.ps`.
+
+```bibtex
+@Inbook{hegland-1990,
+  author = {Hegland, M.},
+  editor = {Burkhart, H.},
+  title = {On the computation of breeding values},
+  bookTitle = {CONPAR 90---VAPP IV: Joint International Conference on Vector and Parallel Processing Zurich, Switzerland, September 10--13, 1990 Proceedings},
+  year = {1990},
+  publisher = {Springer Berlin Heidelberg},
+  address = {Berlin, Heidelberg},
+  pages = {232--242},
+  isbn = {978-3-540-46597-3},
+  doi = {10.1007/3-540-53065-7_103},
+}
+
+@TechReport{hegland-1993,
+  author = {Hegland, M.},
+  title = {Description and Use of Animal Breeding Data for Large Least Squares Problems},
+  institution = {CERFACS},
+  year = {1993},
+  type = {Technical Report},
+  number = {TR/PA/93/50},
+  address = {Toulouse, France},
+}
+```
