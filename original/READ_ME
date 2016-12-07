@@ -1,0 +1,44 @@
+ANIMAL BREEDING DATA FOR LARGE LEAST SQUARES PROBLEM
+
+Some large rectangular matrices used in animal breeding are
+presented.
+We describe how to generate in Harwell-Boeing format these 
+matrices from the data supplied by animal breeders. The 
+matrices are very sparse (3 nonzeros per row) and range 
+between 26x20 and 968652x582694.
+
+Several extremely sparse matrices were used to estimate the
+breeding values for pigs in Switzerland. In the original
+scheme the animal breeders usually solve the normal equations
+using SOR or Cholesky factorization.
+The matrices are rank deficient with rank deficiency of 1.
+To compute the solution they set the last component of the
+solution to 0.
+
+The following files are available:
+
+descr.ps.Z: compressed file containing the CERFACS report
+            describing the animal data;
+Conv.tar.Z: compressed directory containing the files
+	    conv.f, conv2.f : conversion programs to generate
+			      the matrices in Harwell-Boeing 
+                              format.
+            The code conv.f constructs problems where only the
+            single trait "weight increase" is considered. The
+            code conv2.f deals with both traits. The matrices
+            constructed using conv.f are smaller than those 
+            constructed using conv2.f. 
+Small.tar.Z: compressed directory containing the data files
+	     x.data, x.ped 
+	     s.data, s.ped
+	     m.data, m.ped
+	     to describe the small problems;
+Large.tar.Z: compressed directory containing the data files
+	     l.data, l.ped 
+	     to describe the large problem;
+Very.tar.Z: compressed directory containing the data files
+	    v.data, v.ped 
+	    to describe the very large problem;
+Extreme.tar.Z: compressed directory containing the data files
+	       e.data, e.ped 
+	       to describe the extreme problem.
