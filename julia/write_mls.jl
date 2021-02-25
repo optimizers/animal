@@ -1,6 +1,5 @@
-using BenchmarkTools, HarwellRutherfordBoeing
 using LinearAlgebra, SparseArrays, DelimitedFiles
-using Krylov, Quadmath
+using Krylov, Quadmath, HarwellRutherfordBoeing
 
 function scale_ls!(A)
   n, m = size(A)
